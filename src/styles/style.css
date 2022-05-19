@@ -1,5 +1,7 @@
 html {
   font-family: "Montserrat", sans-serif;
+  background-color: #EAEAEA;
+  overflow-x: hidden;
 }
 
 ul {
@@ -173,5 +175,198 @@ a {
   width: 321px;
   height: 226px;
   margin-right: auto;
+}
+
+.shop-sec {
+  width: 100vw;
+}
+
+.shop-sec-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cases {
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  margin: 0px 0px 20px 0px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #838383;
+}
+
+.card-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #1C1C27;
+}
+
+.shop-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.shop-card {
+  width: 100vw;
+  height: 100vh;
+  max-width: 346px;
+  max-height: 407px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 30px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.shop-card-content {
+  margin: auto auto;
+}
+
+.case-img {
+  margin-bottom: 20px;
+}
+
+.top-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 23.88px;
+  margin-bottom: 54.45px;
+}
+
+.headphones {
+  margin-bottom: 50px;
+}
+
+.headphones-card-content {
+  width: 100vw;
+  height: 100vh;
+  max-width: 307px;
+  max-height: 359px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.headphone-img {
+  width: 219.61px;
+  height: 237.45px;
+}
+
+.card-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.card-main-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card-title-headphone {
+  margin-right: 105px;
+}
+
+.now-price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFA542;
+}
+
+.old-price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 21px;
+  color: #FFCE7F;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.rating {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.rate {
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #838383;
+}
+
+.remote-headphones {
+  margin-bottom: 60px;
+}
+
+.footer {
+  width: 100vw;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

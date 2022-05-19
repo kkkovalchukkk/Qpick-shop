@@ -2,11 +2,17 @@ $containerWidth: 1100px;
 $mainFont: 'Montserrat', sans-serif;
 $backgroundColor: #EAEAEA;
 $blackColor: #101010;
+$greyColor: #838383;
+$darkBlueColor: #1C1C27;
+$goldColor: #FFA542;
+$lightGoldColor:#FFCE7F;
 
 // Utils 
 
 html {
     font-family: $mainFont;
+    background-color: $backgroundColor;
+    overflow-x:hidden;
 }
 
 ul {
@@ -145,3 +151,155 @@ a {
     margin-right: auto;
 }
 
+// Shop section 
+
+.shop-sec {
+    width: 100vw;
+}
+
+.shop-sec-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cases {
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    margin: 0px 0px 20px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $greyColor;
+}
+
+.card-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: $darkBlueColor;
+}
+
+.shop-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.shop-card {
+    width: 100vw;
+    height: 100vh;
+    max-width: 346px;
+    max-height: 407px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.shop-card-content {
+    margin: auto auto;
+}
+
+.case-img {
+    margin-bottom: 20px;
+}
+
+.top-card {
+    display: flex;
+    flex-direction: row;
+    gap: 23.88px;
+    margin-bottom: 54.45px;
+}
+.headphones {
+    margin-bottom: 50px;
+}
+.headphones-card-content {
+    width: 100vw;
+    height: 100vh;
+    max-width: 307px;
+    max-height: 359px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.headphone-img {
+    width: 219.61px;
+    height: 237.45px;
+}
+
+
+.card-main {
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.card-main-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-title-headphone {
+    margin-right: 105px;
+}
+
+.price {
+    
+}
+
+.now-price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: $goldColor;
+}
+
+.old-price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFCE7F;
+    text-decoration-line: line-through;
+}
+
+.rating {
+    align-self: flex-start;
+
+}
+
+.rate {
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: $greyColor;
+}
+
+.remote-headphones {
+    margin-bottom: 60px;
+}
+
+// Footer
+
+.footer {
+    width: 100vw;
+    position: absolute;
+    max-width: ;
+}
