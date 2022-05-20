@@ -72,18 +72,111 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
+}
+
+// Open Phone Menu 
+
+.phoneMenu {
+    width: 100vw;
+    max-width: 255px;
+    position: absolute;
+    top: 44px;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: $backgroundColor;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.341);
+    overflow: hidden;
+}
+
+
+.phone-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 19px 29px 29px 27px;
+}
+
+.phone-menu-list-item {
+    width: 100%;
+    max-width: 149px;
+
+}
+
+.arrow-icon {
+    transition: transform .2s ease;
+}
+.rotate {
+    transform: rotate(180deg) !important;
+}
+
+.phoneBrand {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     cursor: pointer;
 }
+
+.phone-brand {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+}
+
+.phone-brand:hover {
+    color: $goldColor;
+}
+
+
+.phone-brand--opened {
+    margin-bottom: 12px;
+}
+
+.phone-brand-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 12px 0px 26px 19px;
+    overflow: hidden;
+}
+.phone-brand-menu-item {
+    cursor: pointer;
+}
+
+.phone-brand-menu-item:hover {
+    color: $goldColor;
+}
+
+.hide {
+    display: none;
+}
+
+.hide-brand {
+    max-height: 0;
+    margin: 0;
+}
+
+// 
 
 .phone-icon {
     width: 15px;
     height: 21px;
     margin-right: 15px;
     transform: translateY(2px);
+    cursor: pointer;
 }
 
 .phone-menu__title {
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .phone-menu__title:hover {
@@ -92,6 +185,8 @@ a:hover {
 
 .arrow-down-btn {
     transform: translateY(1px);
+    cursor: pointer;
+    transition: transform .2s ease;
 }
 
 .nav-list {
