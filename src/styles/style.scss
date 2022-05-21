@@ -75,6 +75,7 @@ a:hover {
     position: relative;
 }
 
+
 // Open Phone Menu 
 
 .phoneMenu {
@@ -218,6 +219,10 @@ a:hover {
     transform: translate(-2px, -10px);
 }
 
+.none {
+    display: none;
+}
+
 // Adv 
 
 .adv {
@@ -277,6 +282,7 @@ a:hover {
     font-size: 20px;
     line-height: 24px;
     color: $greyColor;
+    user-select: none;
 }
 
 .card-title {
@@ -309,6 +315,11 @@ a:hover {
     background-color: #fff;
     text-align: center;
     cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.shop-card:hover {
+    transform: scale(1.05);
 }
 
 .shop-card-content {
@@ -466,10 +477,13 @@ a:hover {
 
 .social-item {
     cursor: pointer;
+    transition: transform .2s ease;
 }
+
 
 .social-item:hover {
     color:$goldColor;
+    transform: translateY(-2px);
 }
 
 

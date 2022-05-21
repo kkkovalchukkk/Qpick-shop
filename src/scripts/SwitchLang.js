@@ -7,11 +7,6 @@ const $switchLangBtns = document.querySelectorAll('.lang-item'),
     $langName = document.querySelector('.lang-name');
 
 
-    
-
-localStorage.setItem('rus', 1);
-localStorage.setItem('eng', 0);
-
 
 const setRusLang = () => {
     localStorage.setItem('rus', 1);
@@ -53,10 +48,14 @@ const setEngLang = () => {
     $langName.textContent = 'Rus';
 };
 
-$switchLangBtns[0].addEventListener('click', () => {
-    setRusLang();
-});
+$switchLangBtns[0].addEventListener('click', setRusLang);
 
-$switchLangBtns[1].addEventListener('click', () => {
-    setEngLang();
-});
+$switchLangBtns[1].addEventListener('click', setEngLang);
+
+if (localStorage.getItem('rus') === 1) {
+    setRusLang()
+} else if (localStorage.getItem('eng') === 1) {
+    setEngLang()
+} else {
+    setRusLang()
+};
