@@ -9,8 +9,8 @@ const $switchLangBtns = document.querySelectorAll('.lang-item'),
 
 
 const setRusLang = () => {
-    sessionStorage.setItem('rus', 1);
-    sessionStorage.setItem('eng', 0);
+    localStorage.setItem('rus', 1);
+    localStorage.setItem('eng', 0);
     $switchLangBtns[0].classList.add('lang-item-now')
     $switchLangBtns[1].classList.remove('lang-item-now')
     $phoneMenuTitle.textContent = 'Выбрать модель телефона';
@@ -29,8 +29,8 @@ const setRusLang = () => {
 };
 
 const setEngLang = () => {
-    sessionStorage.setItem('rus', 0);
-    sessionStorage.setItem('eng', 1);
+    localStorage.setItem('rus', 0);
+    localStorage.setItem('eng', 1);
     $switchLangBtns[0].classList.remove('lang-item-now')
     $switchLangBtns[1].classList.add('lang-item-now')
     $phoneMenuTitle.textContent = 'Choose a phone model';
@@ -52,9 +52,9 @@ $switchLangBtns[0].addEventListener('click', setRusLang);
 
 $switchLangBtns[1].addEventListener('click', setEngLang);
 
-if (sessionStorage.getItem('rus') === 1) {
+if (localStorage.getItem('rus') === 1) {
     setRusLang()
-} else if (sessionStorage.getItem('eng') === 1) {
+} else if (localStorage.getItem('eng') === 1) {
     setEngLang()
 } else {
     setRusLang()
